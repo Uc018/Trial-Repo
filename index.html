@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square Root Calculator</title>
+    <link rel="stylesheet" href="csc399.css">
+</head>
+<body>
+
+    <h2>Square Root Calculator</h2>
+    <div class="rev">
+
+    <input type="number" id="num" placeholder="Enter a number">
+    <button id="btnCalc">Calculate</button>
+
+    <p>Square root is:  <span id="result"></span></p>
+
+</div>
+    <script>
+        // Select elements
+        const button = document.getElementById("btnCalc");
+        const result = document.getElementById("result");
+
+        // Add event listener
+        button.addEventListener("click", function () {
+            const number = document.getElementById("num").value;
+
+            if (number === "") {
+                result.textContent = "Please enter a number";
+            } else if (number < 0) {
+                result.textContent = "Square root of negative number is not real";
+            } else {
+                const sqrt = Math.sqrt(number);
+                result.textContent = sqrt;
+            }
+        });
+    </script>
+
+</body>
+</html>

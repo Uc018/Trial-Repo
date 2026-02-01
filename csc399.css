@@ -1,0 +1,30 @@
+h2{
+text-align: center;
+font-size: 50px;
+}
+/* .rev{
+   display: block;
+} */
+ #btnCalc{
+    display: inline-flex;
+ }
+ .rev{
+    text-align: center;
+ }
+ #btnCalc{
+    background-color: brown;
+    color: white;
+    padding: 13px 45px;
+    border-radius: 10%;
+    border-color: rgb(49, 25, 25);
+ }
+ #num{
+    padding: 10px 20px;
+ }
+ body{
+    margin-top: 160px;
+    background-color: rgb(255, 255, 255);
+ }
+ .resultdis{
+    justify-content: space-between;
+ }
